@@ -926,6 +926,85 @@
                 </div>
 
                 <div class="project-card">
+                    <div class="project-header">Regulatory Impact Forecasting Model</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag"> Classification</span>
+                            <span class="tag"> Python</span>
+                            <span class="tag"> Predictive Modeling</span>
+                        </div>
+                        <p> Predictive model classifying regulatory reform outcomes across 190 countries to identify key drivers of capital markets performance.</p>
+                        <div class="project-steps">
+                            <div class="step">
+                                <div class="step-title">Data Preparation & Feature Engineering</div>
+                                <div class="step-content">Used regulatory indicators as features: procedures to register business, minimum capital requirements, tax burden, hiring flexibility, insolvency recovery rates, shareholder protection indices</div>
+                            </div>
+                            <div class="step">
+                                <div class="step-title">Model Development</div>
+                                <div class="step-content">Trained and compared logistic regression (~70% accuracy) and random forest (86% accuracy) using historical data on regulatory reforms and their outcomes</div>
+                            </div>
+                            <div class="step">
+                                <div class="step-title">Key Findings & Application</div>
+                                <div class="step-content">Model predicts impact on FDI flows, credit access, new business registrations, and GDP growth, enabling team to prioritize high-impact reforms for deeper analysis</div>
+                            </div>
+                        </div>
+                        
+                        <div class="viz-container">
+                            <div class="chart-title">Regulatory Indicators → Capital Markets Outcomes</div>
+                            <div style="display: flex; justify-content: center; gap: 30px; padding: 20px; flex-wrap: wrap;">
+                                <!-- Input Features -->
+                                <div style="text-align: center;">
+                                    <div style="color: #8BB19E; font-weight: bold; margin-bottom: 15px;">Input Features</div>
+                                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                                        <div style="background: rgba(139, 177, 158, 0.15); padding: 8px 15px; border-radius: 8px; color: #ccc; font-size: 0.8rem; border: 1px solid rgba(139, 177, 158, 0.3);">Business Registration</div>
+                                        <div style="background: rgba(139, 177, 158, 0.15); padding: 8px 15px; border-radius: 8px; color: #ccc; font-size: 0.8rem; border: 1px solid rgba(139, 177, 158, 0.3);">Tax Burden</div>
+                                        <div style="background: rgba(139, 177, 158, 0.15); padding: 8px 15px; border-radius: 8px; color: #ccc; font-size: 0.8rem; border: 1px solid rgba(139, 177, 158, 0.3);">Labor Flexibility</div>
+                                        <div style="background: rgba(139, 177, 158, 0.15); padding: 8px 15px; border-radius: 8px; color: #ccc; font-size: 0.8rem; border: 1px solid rgba(139, 177, 158, 0.3);">Insolvency Recovery</div>
+                                        <div style="background: rgba(139, 177, 158, 0.15); padding: 8px 15px; border-radius: 8px; color: #ccc; font-size: 0.8rem; border: 1px solid rgba(139, 177, 158, 0.3);">Shareholder Protection</div>
+                                    </div>
+                                </div>
+                                <!-- Arrow -->
+                                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                    <div style="color: #8BB19E; font-size: 2rem;">→</div>
+                                    <div style="background: linear-gradient(135deg, #8BB19E, #6B9080); padding: 10px 15px; border-radius: 10px; color: #000; font-weight: bold; font-size: 0.85rem; margin: 10px 0;">Random Forest</div>
+                                    <div style="color: #8BB19E; font-size: 0.9rem; font-weight: bold;">86% Accuracy</div>
+                                </div>
+                                <!-- Output Predictions -->
+                                <div style="text-align: center;">
+                                    <div style="color: #8BB19E; font-weight: bold; margin-bottom: 15px;">Predicted Outcomes</div>
+                                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                                        <div style="background: rgba(139, 177, 158, 0.25); padding: 8px 15px; border-radius: 8px; color: #8BB19E; font-size: 0.8rem; border: 1px solid rgba(139, 177, 158, 0.5);">FDI Flows</div>
+                                        <div style="background: rgba(139, 177, 158, 0.25); padding: 8px 15px; border-radius: 8px; color: #8BB19E; font-size: 0.8rem; border: 1px solid rgba(139, 177, 158, 0.5);">Credit Access</div>
+                                        <div style="background: rgba(139, 177, 158, 0.25); padding: 8px 15px; border-radius: 8px; color: #8BB19E; font-size: 0.8rem; border: 1px solid rgba(139, 177, 158, 0.5);">New Businesses</div>
+                                        <div style="background: rgba(139, 177, 158, 0.25); padding: 8px 15px; border-radius: 8px; color: #8BB19E; font-size: 0.8rem; border: 1px solid rgba(139, 177, 158, 0.5);">Job Creation</div>
+                                        <div style="background: rgba(139, 177, 158, 0.25); padding: 8px 15px; border-radius: 8px; color: #8BB19E; font-size: 0.8rem; border: 1px solid rgba(139, 177, 158, 0.5);">GDP Growth</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="model-comparison" style="margin-top: 20px;">
+                                <div class="model-item">
+                                    <div class="model-name">Logistic Reg.</div>
+                                    <div class="model-score">~70%</div>
+                                    <div style="color: #ccc; font-size: 0.8rem;">Accuracy</div>
+                                </div>
+                                <div class="model-item">
+                                    <div class="model-name">Random Forest</div>
+                                    <div class="model-score">86%</div>
+                                    <div style="color: #ccc; font-size: 0.8rem;">Accuracy</div>
+                                </div>
+                                <div class="model-item">
+                                    <div class="model-name">Reforms Analyzed</div>
+                                    <div class="model-score">3,000+</div>
+                                </div>
+                                <div class="model-item">
+                                    <div class="model-name">Outcome Classes</div>
+                                    <div class="model-score">3</div>
+                                    <div style="color: #ccc; font-size: 0.8rem;">+/-/neutral</div>
+                                </div>
+                            </div>
+                        </div>
+
+                <div class="project-card">
                     <div class="project-header">COVID-19 Impact Analysis: Economic & Health Outcomes</div>
                     <div class="project-content">
                         <div class="project-tags">
