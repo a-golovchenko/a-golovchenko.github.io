@@ -1004,97 +1004,98 @@
                             </div>
                         </div>
                      </div>
+                </div>
 
-                    <div class="project-card">
-                    <div class="project-header">COVID-19 Impact Analysis: Economic & Health Outcomes</div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Panel Data Analysis</span>
-                            <span class="tag">Stata</span>
-                            <span class="tag">Index Construction</span>
+                <div class="project-card">
+                <div class="project-header">COVID-19 Impact Analysis: Economic & Health Outcomes</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Panel Data Analysis</span>
+                        <span class="tag">Stata</span>
+                        <span class="tag">Index Construction</span>
+                    </div>
+                    <p>Panel data analysis evaluating health system performance across 5 European countries (UK, France, Italy, Germany, Spain) in addressing the health and economic consequences of COVID-19.</p>
+                    <div class="project-steps">
+                        <div class="step">
+                            <div class="step-title">Panel Data Engineering & Index Design</div>
+                            <div class="step-content">Constructed quarterly panel dataset (Q1 2020–Q4 2022), developed composite Health System Performance Index combining GDP growth and excess mortality</div>
                         </div>
-                        <p>Panel data analysis evaluating health system performance across 5 European countries (UK, France, Italy, Germany, Spain) in addressing the health and economic consequences of COVID-19.</p>
-                        <div class="project-steps">
-                            <div class="step">
-                                <div class="step-title">Panel Data Engineering & Index Design</div>
-                                <div class="step-content">Constructed quarterly panel dataset (Q1 2020–Q4 2022), developed composite Health System Performance Index combining GDP growth and excess mortality</div>
-                            </div>
-                            <div class="step">
-                                <div class="step-title">Econometric Modeling</div>
-                                <div class="step-content">Implemented three models: Pooled OLS, Panel Fixed Effects, and Panel FE with country dummies, achieved progressive R² improvement: 0.292 → 0.936</div>
-                            </div>
-                            <div class="step">
-                                <div class="step-title">Key Findings & Policy Implications</div>
-                                <div class="step-content">Germany ranked highest performance, vaccination coverage and testing capacity showed strong positive associations with health system performance</div>
-                            </div>
+                        <div class="step">
+                            <div class="step-title">Econometric Modeling</div>
+                            <div class="step-content">Implemented three models: Pooled OLS, Panel Fixed Effects, and Panel FE with country dummies, achieved progressive R² improvement: 0.292 → 0.936</div>
                         </div>
+                        <div class="step">
+                            <div class="step-title">Key Findings & Policy Implications</div>
+                            <div class="step-content">Germany ranked highest performance, vaccination coverage and testing capacity showed strong positive associations with health system performance</div>
+                        </div>
+                    </div>
 
-                        <div class="viz-container">
-                            <div class="chart-title">Health System Performance by Country (Relative to France)</div>
-                            <div class="performance-chart">
-                                <div class="bar" style="height: 100%;" data-tooltip="Germany: +4.83 vs baseline (France)">
-                                    <div class="bar-value">+4.83</div>
-                                    <div class="bar-label">🇩🇪 Germany</div>
-                                </div>
-                                <div class="bar" style="height: 88%;" data-tooltip="Italy: +4.25 vs baseline (France)">
-                                    <div class="bar-value">+4.25</div>
-                                    <div class="bar-label">🇮🇹 Italy</div>
-                                </div>
-                                <div class="bar" style="height: 85%;" data-tooltip="Spain: +4.12 vs baseline (France)">
-                                    <div class="bar-value">+4.12</div>
-                                    <div class="bar-label">🇪🇸 Spain</div>
-                                </div>
-                                <div class="bar" style="height: 66%;" data-tooltip="UK: +3.21 vs baseline (France)">
-                                    <div class="bar-value">+3.21</div>
-                                    <div class="bar-label">🇬🇧 UK</div>
-                                </div>
-                                <div class="bar" style="height: 20%; background: linear-gradient(to top, #666, #444);" data-tooltip="France: Baseline country (reference = 0)">
-                                    <div class="bar-value">0.00</div>
-                                    <div class="bar-label">🇫🇷 France (Baseline)</div>
-                                </div>
+                    <div class="viz-container">
+                        <div class="chart-title">Health System Performance by Country (Relative to France)</div>
+                        <div class="performance-chart">
+                            <div class="bar" style="height: 100%;" data-tooltip="Germany: +4.83 vs baseline (France)">
+                                <div class="bar-value">+4.83</div>
+                                <div class="bar-label">🇩🇪 Germany</div>
                             </div>
-                            
-                            <div class="covid-timeline">
-                                <div class="chart-title">COVID-19 Timeline Analysis</div>
-                                <div class="timeline-controls">
-                                    <button class="timeline-btn active" data-period="all">Full Period</button>
-                                    <button class="timeline-btn" data-period="2020">2020</button>
-                                    <button class="timeline-btn" data-period="2021">2021</button>
-                                    <button class="timeline-btn" data-period="2022">2022</button>
-                                </div>
-                                <div id="timelineChart">
-                                    <p style="text-align: center; color: #8BB19E; margin: 20px 0;">
-                                        📊 Interactive timeline showing health system performance evolution across Q1 2020 - Q4 2022
-                                    </p>
-                                </div>
+                            <div class="bar" style="height: 88%;" data-tooltip="Italy: +4.25 vs baseline (France)">
+                                <div class="bar-value">+4.25</div>
+                                <div class="bar-label">🇮🇹 Italy</div>
                             </div>
-                            
-                            <div class="model-comparison" style="margin-top: 20px;">
-                                <div class="model-item">
-                                    <div class="model-name">Countries</div>
-                                    <div class="model-score">5</div>
-                                </div>
-                                <div class="model-item">
-                                    <div class="model-name">Time Period</div>
-                                    <div class="model-score">12 Qtrs</div>
-                                </div>
-                                <div class="model-item">
-                                    <div class="model-name">Final R²</div>
-                                    <div class="model-score">0.936</div>
-                                </div>
-                                <div class="model-item">
-                                    <div class="model-name">Variables</div>
-                                    <div class="model-score">9</div>
-                                </div>
+                            <div class="bar" style="height: 85%;" data-tooltip="Spain: +4.12 vs baseline (France)">
+                                <div class="bar-value">+4.12</div>
+                                <div class="bar-label">🇪🇸 Spain</div>
+                            </div>
+                            <div class="bar" style="height: 66%;" data-tooltip="UK: +3.21 vs baseline (France)">
+                                <div class="bar-value">+3.21</div>
+                                <div class="bar-label">🇬🇧 UK</div>
+                            </div>
+                            <div class="bar" style="height: 20%; background: linear-gradient(to top, #666, #444);" data-tooltip="France: Baseline country (reference = 0)">
+                                <div class="bar-value">0.00</div>
+                                <div class="bar-label">🇫🇷 France (Baseline)</div>
                             </div>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">🔗 View Full Project</a>
+                            
+                        <div class="covid-timeline">
+                            <div class="chart-title">COVID-19 Timeline Analysis</div>
+                            <div class="timeline-controls">
+                                <button class="timeline-btn active" data-period="all">Full Period</button>
+                                <button class="timeline-btn" data-period="2020">2020</button>
+                                <button class="timeline-btn" data-period="2021">2021</button>
+                                <button class="timeline-btn" data-period="2022">2022</button>
+                            </div>
+                            <div id="timelineChart">
+                                <p style="text-align: center; color: #8BB19E; margin: 20px 0;">
+                                    📊 Interactive timeline showing health system performance evolution across Q1 2020 - Q4 2022
+                                </p>
+                            </div>
                         </div>
+                            
+                        <div class="model-comparison" style="margin-top: 20px;">
+                            <div class="model-item">
+                                <div class="model-name">Countries</div>
+                                <div class="model-score">5</div>
+                            </div>
+                            <div class="model-item">
+                                <div class="model-name">Time Period</div>
+                                <div class="model-score">12 Qtrs</div>
+                            </div>
+                            <div class="model-item">
+                                <div class="model-name">Final R²</div>
+                                <div class="model-score">0.936</div>
+                            </div>
+                            <div class="model-item">
+                                <div class="model-name">Variables</div>
+                                <div class="model-score">9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">🔗 View Full Project</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
  <!-- Big Data & Machine Learning Section -->
